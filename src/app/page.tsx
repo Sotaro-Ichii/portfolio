@@ -243,8 +243,42 @@ export default function Home() {
           <p className="text-xl text-blue-50 mb-12 max-w-2xl mx-auto">
             {t.contact.description}
           </p>
-          
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+
+          {/* お問い合わせフォーム（Formspree） */}
+          <form
+            action="https://formspree.io/f/mldnayqj"
+            method="POST"
+            className="space-y-4 max-w-lg mx-auto text-left"
+          >
+            <input
+              type="text"
+              name="name"
+              required
+              placeholder="お名前 / Name"
+              className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="メールアドレス / Email"
+              className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+            <textarea
+              name="message"
+              required
+              placeholder="お問い合わせ内容 / Message"
+              className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 min-h-[120px]"
+            />
+            <button
+              type="submit"
+              className="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition font-semibold"
+            >
+              送信 / Send
+            </button>
+          </form>
+
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mt-12">
             <a 
               href="https://www.linkedin.com/in/sotaro-ichii/" 
               target="_blank" 
