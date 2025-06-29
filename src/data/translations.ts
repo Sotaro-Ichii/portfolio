@@ -90,7 +90,7 @@ export const translations: Record<Language, Translations> = {
     },
     about: {
       title: 'About Me',
-      description1: 'I\'m a dedicated Computer Science student at OCC with a passion for creating meaningful applications that solve real-world problems. My journey in technology has been driven by curiosity and a desire to make a positive impact through code.',
+      description1: 'I\'m a dedicated Computer Science student at Orange Coast College with a passion for creating meaningful applications that solve real-world problems. My journey in technology has been driven by curiosity and a desire to make a positive impact through code.',
       description2: 'From launching web applications to participating in business competitions, I\'ve developed a diverse skill set that combines technical expertise with business acumen. I believe in continuous learning and pushing the boundaries of what\'s possible with technology.',
       whatIDo: 'What I Do',
       fullstack: 'Full-stack web development',
