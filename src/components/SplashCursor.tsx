@@ -24,19 +24,6 @@ interface SplashCursorProps {
   TRANSPARENT?: boolean;
 }
 
-interface Pointer {
-  id: number;
-  texcoordX: number;
-  texcoordY: number;
-  prevTexcoordX: number;
-  prevTexcoordY: number;
-  deltaX: number;
-  deltaY: number;
-  down: boolean;
-  moved: boolean;
-  color: ColorRGB;
-}
-
 export default function SplashCursor({
   SIM_RESOLUTION = 128,
   DYE_RESOLUTION = 1440,
