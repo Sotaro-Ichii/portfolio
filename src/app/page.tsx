@@ -5,7 +5,6 @@ import Image from "next/image";
 import { useLanguage } from '@/contexts/LanguageContext';
 import { LanguageToggle } from '@/components/LanguageToggle';
 import { ThemeToggle } from '@/components/ThemeToggle';
-import SplashCursor from '@/components/SplashCursor';
 
 export default function Home() {
   const { t, language } = useLanguage();
@@ -55,13 +54,11 @@ export default function Home() {
     : ['JavaScript', 'React', 'TypeScript', 'Node.js', 'Firebase', 'Python', 'Git', 'AWS'];
 
   return (
-    <>
-      <SplashCursor />
-      <main className={`min-h-screen transition-all duration-500 ${
-        isDarkMode 
-          ? 'gradient-bg-dark text-white' 
-          : 'gradient-bg text-white'
-      }`}>
+    <main className={`min-h-screen transition-all duration-500 ${
+      isDarkMode 
+        ? 'gradient-bg-dark text-white' 
+        : 'gradient-bg text-white'
+    }`}>
       
       {/* ナビゲーションバー */}
       <nav className={`sticky top-0 z-50 px-8 py-6 transition-all duration-300 ${
@@ -280,7 +277,6 @@ export default function Home() {
         <p>{t.footer.copyright}</p>
       </footer>
     </main>
-    </>
   );
 }
 
