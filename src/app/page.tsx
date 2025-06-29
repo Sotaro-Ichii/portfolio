@@ -248,33 +248,41 @@ export default function Home() {
           <form
             action="https://formspree.io/f/mldnayqj"
             method="POST"
-            className="space-y-4 max-w-lg mx-auto text-left"
+            className="relative space-y-6 max-w-lg mx-auto text-left bg-white/10 dark:bg-black/30 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-8 glass"
+            style={{ boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.25)' }}
           >
+            <div className="flex items-center gap-3 mb-6">
+              <svg className="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M16 12H8m0 0l4-4m-4 4l4 4" /></svg>
+              <h3 className="text-2xl font-bold gradient-text">Contact Form</h3>
+            </div>
             <input
               type="text"
               name="name"
               required
               placeholder="お名前 / Name"
-              className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full px-4 py-3 rounded-lg border-none bg-white/30 dark:bg-black/30 text-base shadow-inner focus:outline-none focus:ring-2 focus:ring-blue-400 transition placeholder:text-gray-400"
             />
             <input
               type="email"
               name="email"
               required
               placeholder="メールアドレス / Email"
-              className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full px-4 py-3 rounded-lg border-none bg-white/30 dark:bg-black/30 text-base shadow-inner focus:outline-none focus:ring-2 focus:ring-blue-400 transition placeholder:text-gray-400"
             />
             <textarea
               name="message"
               required
               placeholder="お問い合わせ内容 / Message"
-              className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 min-h-[120px]"
+              className="w-full px-4 py-3 rounded-lg border-none bg-white/30 dark:bg-black/30 text-base shadow-inner focus:outline-none focus:ring-2 focus:ring-blue-400 transition min-h-[120px] placeholder:text-gray-400"
             />
             <button
               type="submit"
-              className="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition font-semibold"
+              className="w-full py-3 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold shadow-md hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-105 hover:shadow-lg"
             >
-              送信 / Send
+              <span className="inline-flex items-center gap-2 justify-center">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M8 12h8m0 0l-4-4m4 4l-4 4" /></svg>
+                送信 / Send
+              </span>
             </button>
           </form>
 
