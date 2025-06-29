@@ -48,7 +48,7 @@ export const translations: Record<Language, Translations> = {
       greeting: 'こんにちは、私は',
       title: 'Sotaro です',
       subtitle: 'コンピューターサイエンス学生 & 開発者',
-      description: '革新的なアプリケーションの構築と最先端技術の探求に情熱を持っています。現在OCCで学びながら、インパクトのあるソリューションを作成しています。',
+      description: '革新的なアプリケーションの構築と最先端技術の探求に情熱を持っています。現在Orange Coast Collegeで学びながら、インパクトのあるソリューションを作成しています。',
       viewProjects: 'プロジェクトを見る',
       getInTouch: 'お問い合わせ',
     },
