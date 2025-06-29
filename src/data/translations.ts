@@ -84,7 +84,7 @@ export const translations: Record<Language, Translations> = {
       greeting: 'Hi, I\'m',
       title: 'Sotaro',
       subtitle: 'Computer Science Student & Developer',
-      description: 'Passionate about building innovative applications and exploring cutting-edge technologies. Currently studying at OCC and creating impactful solutions.',
+      description: 'Passionate about building innovative applications and exploring cutting-edge technologies. Currently studying at Orange Coast College and creating impactful solutions.',
       viewProjects: 'View Projects',
       getInTouch: 'Get In Touch',
     },
