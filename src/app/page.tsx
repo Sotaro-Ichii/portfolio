@@ -26,7 +26,7 @@ export default function Home() {
         ? "アメリカの日本人学生向けの大学授業検索プラットフォーム。React、Firebase、Stripeで構築。"
         : "A college class search platform for Japanese students in the U.S. Built with React, Firebase, and Stripe.",
       tech: ["React", "Firebase", "Stripe", "TypeScript"],
-      link: "#",
+      link: "https://kimuchi-site.vercel.app/",
       image: "/globe.svg"
     },
     {
@@ -35,7 +35,7 @@ export default function Home() {
         ? "厳選されたアメリカファッションを販売するオンラインビンテージ衣料店。在庫管理、マーケティング、運営を担当。"
         : "An online vintage clothing store selling curated U.S. fashion. Managed inventory, marketing, and operations.",
       tech: language === 'ja' ? ["Eコマース", "マーケティング", "運営"] : ["E-commerce", "Marketing", "Operations"],
-      link: "#",
+      link: "https://ichivintage.base.shop/",
       image: "/window.svg"
     },
     {
@@ -44,7 +44,7 @@ export default function Home() {
         ? "OCCのピッチコンペティションでトップ5入り。革新的な男性用衛生用品プロトタイプを発表。"
         : "Placed top 5 in OCC's pitch competition. Presented an innovative men's hygiene product prototype.",
       tech: language === 'ja' ? ["ビジネス", "ピッチ", "イノベーション"] : ["Business", "Pitch", "Innovation"],
-      link: "#",
+      link: "https://orangecoastcollege.edu/academics/business-computing/pirates-plank/index.html",
       image: "/file.svg"
     }
   ];
