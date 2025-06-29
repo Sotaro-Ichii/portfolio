@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Image from "next/image";
 import { useLanguage } from '@/contexts/LanguageContext';
 import { LanguageToggle } from '@/components/LanguageToggle';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 export default function Home() {
   const { t, language } = useLanguage();
@@ -76,18 +77,7 @@ export default function Home() {
 
           <div className="flex items-center gap-4">
             <LanguageToggle />
-            <button
-              onClick={toggleMode}
-              className={`w-14 h-8 rounded-full p-1 transition-all duration-300 ${
-                isDarkMode ? 'bg-blue-600' : 'bg-purple-600'
-              } flex items-center hover:scale-105`}
-            >
-              <div
-                className={`w-6 h-6 bg-white rounded-full shadow-md transform transition-transform duration-300 ${
-                  isDarkMode ? 'translate-x-6' : 'translate-x-0'
-                }`}
-              ></div>
-            </button>
+            <ThemeToggle isDarkMode={isDarkMode} toggleMode={toggleMode} />
           </div>
         </div>
       </nav>
